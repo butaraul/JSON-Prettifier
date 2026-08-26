@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "JSON Vision",
+  "version": "1.0.0",
+  "description": "Beautiful, fast JSON visualization for any JSON response your browser loads. Tree view, search, dark mode, and zero network requests.",
+  "author": "JSON Vision Contributors",
+  "homepage_url": "https://github.com/your-username/json-vision",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "JSON Vision"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "file:///*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "file:///*/*"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
+  },
+  "minimum_chrome_version": "100"
+}
