@@ -2,29 +2,20 @@
 
 **Beautiful JSON visualization in your browser.**
 
-<p>
-  <img alt="Chrome Web Store" src="https://img.shields.io/badge/Chrome%20Web%20Store-coming%20soon-lightgrey?logo=googlechrome&logoColor=white">
-  <img alt="GitHub stars" src="https://img.shields.io/github/stars/your-username/json-vision?style=flat&logo=github">
-  <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg">
-  <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg">
-</p>
-
 JSON Vision turns the raw wall of text your browser shows for a JSON response into a fast, interactive, devtools-inspired tree: collapsible nodes, instant search, keyboard navigation, and a dark mode that doesn't fight your eyes at 2 a.m. — all running 100% locally, with zero network requests.
 
 <!-- Screenshot: full-window light-mode view of a formatted JSON API response,
      showing the toolbar (search bar, expand/collapse buttons, copy, theme
      toggle), line numbers down the left, and a few expanded/collapsed nodes
      with syntax-colored keys/strings/numbers. -->
-![JSON Vision — light mode screenshot](docs/screenshot-light.png)
 
 <!-- Screenshot: the same view in dark mode, ideally showing an active search
      with the match counter (e.g. "3/12 matches") and highlighted matches. -->
-![JSON Vision — dark mode with active search](docs/screenshot-dark-search.png)
+
 
 <!-- Demo GIF: a short (10–15s) screen recording showing: opening a JSON API
      URL, the page auto-formatting, typing a search query, jumping between
      matches with Enter, expanding/collapsing a node, and toggling dark mode. -->
-![JSON Vision demo](docs/demo.gif)
 
 ## ✨ Features
 
@@ -51,7 +42,7 @@ JSON Vision turns the raw wall of text your browser shows for a JSON response in
 You don't need any build tools — JSON Vision is plain HTML/CSS/JS and runs directly from source.
 
 1. **Download the code.**
-   - Click the green **Code** button on the [GitHub repository](https://github.com/your-username/json-vision) → **Download ZIP**, then unzip it somewhere you'll remember (e.g. `~/Downloads/json-vision`).
+   - Click the green **Code** button on the [GitHub repository](https://github.com/butaraul/json-vision) → **Download ZIP**, then unzip it somewhere you'll remember (e.g. `~/Downloads/json-vision`).
    - Or, if you have Git installed: `git clone https://github.com/your-username/json-vision.git`
 2. **Open Chrome's extensions page.**
    - Type `chrome://extensions` into your address bar and press Enter, or go to Chrome's menu (⋮) → **Extensions** → **Manage Extensions**.
