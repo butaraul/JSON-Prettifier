@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Vision</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="jv-popup">
+      <header class="jv-popup-header">
+        <span class="jv-popup-icon">{ }</span>
+        <div>
+          <h1>JSON Vision</h1>
+          <p class="jv-popup-tagline">Beautiful JSON visualization</p>
+        </div>
+      </header>
+
+      <div class="jv-popup-row">
+        <label for="jv-enabled-toggle" class="jv-popup-label">
+          <span>Enable JSON Vision</span>
+          <span class="jv-popup-hint">Automatically format raw JSON pages</span>
+        </label>
+        <label class="jv-switch">
+          <input type="checkbox" id="jv-enabled-toggle" />
+          <span class="jv-switch-slider"></span>
+        </label>
+      </div>
+
+      <div class="jv-popup-row">
+        <label for="jv-theme-select" class="jv-popup-label">
+          <span>Theme</span>
+          <span class="jv-popup-hint">Applies to every JSON page you open</span>
+        </label>
+        <select id="jv-theme-select" class="jv-popup-select">
+          <option value="auto">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+
+      <p class="jv-popup-note">Changes apply the next time you open a JSON page (reload an already-open one to see them).</p>
+
+      <footer class="jv-popup-footer">
+        <span id="jv-popup-status" class="jv-popup-status" role="status" aria-live="polite"></span>
+      </footer>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
