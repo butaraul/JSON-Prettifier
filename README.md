@@ -1,4 +1,4 @@
-# JSON Vision
+# JSON Prettifier
 
 **Beautiful JSON visualization in your browser.**
 
