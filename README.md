@@ -17,19 +17,19 @@ JSON Vision turns the raw wall of text your browser shows for a JSON response in
      URL, the page auto-formatting, typing a search query, jumping between
      matches with Enter, expanding/collapsing a node, and toggling dark mode. -->
 
-## ✨ Features
+## Features
 
-- 🔍 **Instant search** across every key and value, with a live match counter (`3/12 matches`) and one-keystroke jump between results
-- 🎨 **Devtools-inspired tree view** with syntax-colored keys, strings, numbers, booleans, and `null`
-- ⚡ **Virtual scrolling** — smoothly handles arrays and objects with tens of thousands of entries by only rendering what's on screen
-- 📋 **One-click copy** — copy the whole document, a single selected node, or just a value's JSON path (double-click any key)
-- 🌙 **Light / dark / system theme**, remembered across every tab you open
-- 💾 **Preferences saved locally** via `chrome.storage` — nothing ever leaves your machine
-- ⌨️ **Full keyboard navigation** — arrow through the tree, expand/collapse, search, and copy without touching the mouse
-- 🧭 **Line numbers** you can click to select an entire line, with a hover tooltip showing the full JSON path
-- 🧹 **Expand All / Collapse All** for jumping between a bird's-eye view and a focused one
-- 🔒 **Zero network requests, zero analytics, zero `eval()`** — see [PRIVACY.md](PRIVACY.md)
-- 📱 **Responsive layout** that stays usable on narrow windows and small screens
+-  **Instant search** across every key and value, with a live match counter (`3/12 matches`) and one-keystroke jump between results
+-  **Devtools-inspired tree view** with syntax-colored keys, strings, numbers, booleans, and `null`
+-  **Virtual scrolling** — smoothly handles arrays and objects with tens of thousands of entries by only rendering what's on screen
+-  **One-click copy** — copy the whole document, a single selected node, or just a value's JSON path (double-click any key)
+-  **Light / dark / system theme**, remembered across every tab you open
+-  **Preferences saved locally** via `chrome.storage` — nothing ever leaves your machine
+-  **Full keyboard navigation** — arrow through the tree, expand/collapse, search, and copy without touching the mouse
+-  **Line numbers** you can click to select an entire line, with a hover tooltip showing the full JSON path
+-  **Expand All / Collapse All** for jumping between a bird's-eye view and a focused one
+-  **Zero network requests, zero analytics, zero `eval()`** — see [PRIVACY.md](PRIVACY.md)
+-  **Responsive layout** that stays usable on narrow windows and small screens
 
 ## Installation
 
@@ -68,7 +68,7 @@ That's it — no `npm install`, no build step. If you edit the source, just clic
    - Click a line to select it, then press `Ctrl+C` / `⌘C` to copy **just that node** (and everything inside it) as JSON.
    - Double-click any key to copy its **path** (e.g. `data.items[3].name`) to your clipboard — handy for writing `jq` filters or code that reaches into the response.
 5. **Line numbers.** Click a line number to select that entire line; hover any row to see its full path in a tooltip.
-6. **Switch themes.** Click 🌙 in the toolbar to toggle light/dark. Your choice is remembered for every JSON page you open afterward (configurable from the extension's popup, too).
+6. **Switch themes.** Click the moon in the toolbar to toggle light/dark. Your choice is remembered for every JSON page you open afterward (configurable from the extension's popup, too).
 
 ### Keyboard shortcuts
 
@@ -97,10 +97,10 @@ Every browser already shows you raw JSON when you hit an API endpoint directly, 
 
 ## Tech Stack
 
-- 🧩 **Chrome Extensions (Manifest V3)** — content script + service worker, no bundler required
-- 🟨 **Vanilla JavaScript** — no frameworks, no dependencies, no build step
-- 🎨 **CSS3** — custom properties for theming, flexbox layout, CSS transitions/animations
-- 💾 **Chrome Storage API** (`chrome.storage.local`) — local-only preference persistence
+-  **Chrome Extensions (Manifest V3)** — content script + service worker, no bundler required
+-  **Vanilla JavaScript** — no frameworks, no dependencies, no build step
+-  **CSS3** — custom properties for theming, flexbox layout, CSS transitions/animations
+-  **Chrome Storage API** (`chrome.storage.local`) — local-only preference persistence
 
 ## Project Structure
 
