@@ -1,5 +1,10 @@
 # JSON Prettifier
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-F7DF1E.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4.svg)](https://developer.chrome.com/docs/extensions/)
+[![GitHub stars](https://img.shields.io/github/stars/butaraul/JSON-Prettifier.svg?style=social)](https://github.com/butaraul/JSON-Prettifier/stargazers)
+
 **Beautiful JSON visualization in your browser.**
 
 JSON Vision turns the raw wall of text your browser shows for a JSON response into a fast, interactive, devtools-inspired tree: collapsible nodes, instant search, keyboard navigation, and a dark mode that doesn't fight your eyes at 2 a.m. — all running 100% locally, with zero network requests.
